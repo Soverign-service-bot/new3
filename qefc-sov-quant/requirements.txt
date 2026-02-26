@@ -1,4 +1,0 @@
-# Runtime dependencies for QEFC multiverse scripts
-pandas>=2.0
-matplotlib>=3.7
-seaborn>=0.12
