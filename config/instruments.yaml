@@ -1,0 +1,39 @@
+# Instrument Specifications
+# Source of truth for tradeable instruments in QEFC system
+#
+# Fields:
+#   symbol: Instrument identifier
+#   tick_size: Minimum price movement
+#   point_value: Dollar value per 1.0 point move per 1.0 lot
+#   contract_size: Standard contract size (units)
+#   min_lot: Minimum position size
+#   max_lot: Maximum position size
+#   lot_step: Lot size increment
+
+instruments:
+  XAUUSD:
+    symbol: XAUUSD
+    tick_size: 0.01
+    point_value: 100.0
+    contract_size: 100
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  EURUSD:
+    symbol: EURUSD
+    tick_size: 0.00001
+    point_value: 10.0
+    contract_size: 100000
+    min_lot: 0.01
+    max_lot: 100.0
+    lot_step: 0.01
+  
+  US100:
+    symbol: US100
+    tick_size: 0.01
+    point_value: 10.0
+    contract_size: 1
+    min_lot: 0.1
+    max_lot: 50.0
+    lot_step: 0.1

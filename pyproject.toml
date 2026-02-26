@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qefc-sov-quant"
+version = "0.1.0"
+description = "Sovereign-Quant: Autonomous Capital Governance with Quaternary Epistemic Control Framework"
+requires-python = ">=3.11"
+dependencies = []
+
+# ----------------------------------------------------------------
+# Ruff – linter + formatter
+# ----------------------------------------------------------------
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+# ----------------------------------------------------------------
+# Mypy – type checker
+# ----------------------------------------------------------------
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+show_error_codes = true
+
+# ----------------------------------------------------------------
+# Pytest
+# ----------------------------------------------------------------
+[tool.pytest.ini_options]
+testpaths = ["tests"]
